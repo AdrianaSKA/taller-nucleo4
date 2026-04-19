@@ -1,0 +1,16 @@
+@if(producto){
+<p>ID: {{parametro}}</p>
+NOMBRE:
+<input [(ngModel)]="producto.nombre" placeholder="nombre">
+<br>
+CIUDAD:
+<input [(ngModel)]="producto.ciudad" placeholder="ciudad">
+<br>
+PRECIO:
+<input [(ngModel)]="producto.precio" placeholder="precio">
+<br>
+  <button (click)="editarProductosMedicos()">Edita y Guarda</button>
+} @else {
+<p>Cargando</p>
+
+}
